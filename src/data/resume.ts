@@ -35,13 +35,13 @@ const DETAILS = {
   summary: `Senior React Native Developer with 8+ years of experience in mobile application development, including
 6+ years specializing in React Native. Experience in building scalable, high-performance applications across
 healthcare, e-commerce, oil & gas, and enterprise domains. Strong skills in TypeScript, Expo, Redux
-Toolkit, Zustand, Firebase, React-Na@ve-Web, and oﬄine-first architectures. Experienced in end-to-end
+Toolkit, Zustand, Firebase, React-Native-Web, and oﬄine-first architectures. Experienced in end-to-end
 delivery and App Store / Play Store publishing.`,
 
   data: [
     { text: "+91 98034-28191", type: "phone" },
     { text: "singh.davinder0810@gmail.com", type: "email" },
-    { text: "www.davinder-singh.com", type: "website" },
+    { text: "https://github.com/Davinder08/MyResume", type: "website" },
     {
       text: "# 8902/20, Gurpal Nagar, St. no. 11/2, Ludhiana, 141003",
       type: "address",
