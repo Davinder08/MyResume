@@ -1,0 +1,34 @@
+html body {
+  background-color: black;
+  color: "black";
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-background-200: oklch(86% 4% 56);
+
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+}
+
+@layer base {
+  h2 {
+    @apply text-2xl font-bold tracking-wide;
+  }
+}
+
+@layer components {
+  .info-card {
+    @apply flex items-start justify-center pt-1;
+  }
+  .info-text {
+    @apply w-full  pl-2 ml-2;
+  }
+  .info-text-border {
+    @apply border-b-2 border-black;
+  }
+}
+
+@utilities {
+}
