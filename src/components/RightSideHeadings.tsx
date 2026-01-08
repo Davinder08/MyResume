@@ -1,5 +1,3 @@
-import React from "react";
-
 const RightSideHeadings = ({ title }: { title: string }) => {
   return (
     <div className="flex justify-center items-center">

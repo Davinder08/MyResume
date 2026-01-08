@@ -5,4 +5,11 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    allowedHosts: [
+      "devserver-main--resume-davinder.netlify.app",
+      "resume-davinder.netlify.app",
+    ],
+  },
+  base: "/",
 });
