@@ -18,7 +18,7 @@ function App() {
 
         <PersonalDetails details={DETAILS} />
 
-        <div className="flex justify-center items-start mt-15">
+        <div className="flex justify-center items-start mt-15 max-xs:flex-col max-sm:flex-col">
           <div id="left" className="mr-15 mb-20">
             <div>
               <h2>Summary</h2>

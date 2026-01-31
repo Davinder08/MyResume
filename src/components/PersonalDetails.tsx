@@ -13,11 +13,11 @@ type InfoType = { type: string; text: string };
 const InfoCard = (item: InfoType, index: number, arr: InfoType[]) => {
   return (
     <div key={index} className="info-card">
-      <div className="w-8 h-8 mx-1">{getIconByType(item.type)}</div>
+      <div className=" mx-1">{getIconByType(item.type)}</div>
       <div
         className={`info-text ${index < arr.length - 1 && "info-text-border"}`}
       >
-        <span className="text-s">{item.text}</span>
+        <span className="text-s max-sm:text-xs">{item.text}</span>
       </div>
     </div>
   );
@@ -40,19 +40,22 @@ const getIconByType = (type: string) => {
 
 const PersonalDetails = ({ details }: { details: DetailsInterface }) => {
   return (
-    <div className="flex w-full mt-10 items-center">
-      <div className="h-45 w-6 -ml-15 bg-black"></div>
-      <div className="ml-15 flex-5 flex flex-col justify-center items-start">
-        <h1 className="text-6xl font-bold mb-2 tracking-widest">
-          {details.fName} {details.lName}
-        </h1>
-        <p className="text-lg text-gray-700 font-oswald font-medium tracking-widest">
-          {details.title} <br />
-          <span className="font-black tracking-widest">({details.specialization})</span>
-        </p>
+    <div className="flex w-full mt-10 items-center flex-row max-lg:flex-col">
+      <div className="flex flex-row">
+        <div className="h-45 w-6 -ml-15 bg-black max-lg:-ml-10" />
+        <div className="ml-15 flex-5 flex flex-col justify-center items-start">
+          <h1 className="text-6xl font-bold mb-2 tracking-widest">
+            {details.fName} {details.lName}
+          </h1>
+          <p className="text-lg text-gray-700 font-oswald font-medium tracking-widest">
+            {details.title} <br />
+            <span className="font-black tracking-widest">
+              ({details.specialization})
+            </span>
+          </p>
+        </div>
       </div>
-
-      <div className="flex flex-1 flex-col justify-center items-start ml-10 ">
+      <div className="flex flex-col justify-center ml-10 max-lg:mt-4 max-lg:ml-0">
         {details.data.map(InfoCard)}
       </div>
     </div>
